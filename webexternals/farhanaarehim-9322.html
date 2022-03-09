@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>Registration form</title>
+        <style>
+            input{
+                background-color: #fff;
+
+            }
+        </style>
+        <script>
+            function check()
+            {
+                if(document.frm1.ename.value=="")
+                {
+                    window.alert("Enter your name");
+                }
+                if(document.frm1.eid.value=="")
+                {
+                    window.alert("Enter your id");
+                }
+                
+                if(document.frm1.email.value=="")
+                {
+                    window.alert("Enter your email");
+                }
+                if(document.frm1.ephone.value=="")
+                {
+                    window.alert("Enter your phone number");
+                }
+                else if(document.frm1.ephone.value.length<10)
+                {
+                    window.alert(" Phone number atleast 10 digit");
+                }
+                if(document.frm1.egender.value=="")
+                {
+                    window.alert("Enter your gender");
+                }
+                if(document.frm1.ejob.value=="")
+                {
+                    window.alert("Enter your job");
+                }
+                if(document.frm1.edate.value=="")
+                {
+                    window.alert("Enter your edob");
+                }
+              
+                if(document.frm1.esalary.value=="")
+                {
+                    window.alert("Enter your salary");
+                }
+                if(document.frm1.edepartment.value=="")
+                {
+                    window.alert("Enter your department");
+                }
+               
+              
+            }
+
+        </script>
+    </head>
+    <body style="background-color: antiquewhite;">
+        <center>
+        <h1><u>Employee Registration Form</u></h1>
+        <br><br>
+        <form name="frm1">
+            <table border="1px" style="border-collapse:collapse;background-color:thistle;color: blueviolet;" cellpadding="10" >
+                <tr>
+                    <td><label>Name</label></td>
+                    <td><input type="text" name="ename" placeholder="enter your name"></td>
+                </tr>
+                <tr>
+                    <td><label>ID</label></td>
+                    <td><input type="text" name="eid" placeholder="enter your id"></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" name="email" placeholder="enter your email"></td>
+                </tr>
+                <tr>
+                    <td><label>Phone</label></td>
+                    <td><input type="text" name="ephone" placeholder="enter your phone number"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td><input type="radio" name="egender" value="female">Female
+                        <input type="radio" name="egender" value="male">Male</td>
+                </tr>
+                <tr>
+                    <td><label>Job</label></td>
+                    <td><input type="text" name="ejob" placeholder="enter your job"></td>
+                </tr>
+                <tr>
+                    <td><label>DOB</label></td>
+                    <td><input type="date" name="edate" placeholder="enter your DOB"></td>
+                </tr>
+    
+                <tr>
+                    <td><label>Salary</label></td>
+                    <td><input type="text" name="esalary" placeholder="enter your salary"></td>
+                </tr>
+                <tr>
+                    <td><label>Department</label></td>
+                    <td><select  name="edepartment">
+                        <option selected="" value="default">Select a department</option>
+                        <option  value="IT">IT</option>
+                        <option value="Management">Management</option>
+                        <option value="Service">Service</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td colspan="2"style="text-align:center"; ><input type="submit" name="submit"  onclick="check()" value="Submit"> <input type="reset" name="reset"   value="Reset"></td>
+                </tr>
+
+
+            </table>
+        </form>
+    </center>
+    </body>
+</html>
